@@ -3,12 +3,13 @@ import pandas as pd
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
-
+from word2number import w2n
 
 print("tensorflow version:", tf.__version__)
 print(tf.sysconfig.get_build_info())
 print(tf.config.list_physical_devices("GPU"))
 
+print(w2n.word_to_num('five'))
 
 # mnist = tf.keras.datasets.mnist
 
